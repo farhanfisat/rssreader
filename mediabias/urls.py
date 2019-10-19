@@ -22,6 +22,10 @@ urlpatterns = [
     url(r'^predict/', predictpage),
     url(r'^urls/', url_list),
     url(r'^feed/', parse),
+    url(r'^feed1/', parse1),
+    url(r'^feed2/', parse2),
+    url(r'^feed3/', parse3),
+    url(r'^feed4/', parse4),
     url(r'^url/(?P<id>\d+)/$', parseclicked),
     url(r'^$', index),
 ]
