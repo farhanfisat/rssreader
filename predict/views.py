@@ -42,6 +42,35 @@ def parse(request):
 	}
 	return render(request, "feeds.html", context)
 
+def parse1(request):
+	#link=Urllist.objects.get(id=2)
+	d = feedparser.parse('http://indianexpress.com/section/cities/kochi/feed/')
+	context = {
+		"d": d, 
+	}
+	return render(request, "feeds.html", context)
+def parse2(request):
+	#link=Urllist.objects.get(id=2)
+	d = feedparser.parse('http://indianexpress.com/section/cities/kochi/feed/')
+	context = {
+		"d": d, 
+	}
+	return render(request, "feeds.html", context)
+def parse3(request):
+	#link=Urllist.objects.get(id=2)
+	d = feedparser.parse('http://indianexpress.com/section/cities/kochi/feed/')
+	context = {
+		"d": d, 
+	}
+	return render(request, "feeds.html", context)
+def parse4(request):
+	#link=Urllist.objects.get(id=2)
+	d = feedparser.parse('http://indianexpress.com/section/cities/kochi/feed/')
+	context = {
+		"d": d, 
+	}
+	return render(request, "feeds.html", context)
+
 def parseclicked(request, id=None):
 	purl=Urllist.objects.get(id=id)
 	link = purl.url	
